@@ -48,6 +48,18 @@
             margin-bottom: 15px;
             font-weight: 500; /* Slightly bold for headings */
         }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .flex-item {
+            flex: 1; /* Allow items to grow equally */
+            margin-right: 20px; /* Space between items */
+        }
+        .flex-item:last-child {
+            margin-right: 0; /* Remove margin from last item */
+        }
         ul {
             list-style: none;
             padding: 0;
@@ -81,41 +93,43 @@
             <img src="https://divyanshi09.github.io/DivyanshiShaktawat.github.io/my_image.jpg" alt="Divyanshi Shaktawat">
         </div>
 
-        <section class="areas-of-interest">
-            <h2>Areas of Interest</h2>
-            <ul>
-                <li>L1 attrition/Backward Transfer</li>
-                <li>Bilingualism/Multilingualism</li>
-                <li>Bidialectalism</li>
-                <li>Sociophonetics</li>
-                <li>Psycholinguistics</li>
-                <li>Ethnolinguistic minorities</li>
-            </ul>
-        </section>
+        <div class="flex-container">
+            <div class="flex-item areas-of-interest">
+                <h2>Areas of Interest</h2>
+                <ul>
+                    <li>L1 attrition/Backward Transfer</li>
+                    <li>Bilingualism/Multilingualism</li>
+                    <li>Bidialectalism</li>
+                    <li>Sociophonetics</li>
+                    <li>Psycholinguistics</li>
+                    <li>Ethnolinguistic minorities</li>
+                </ul>
+            </div>
 
-        <section class="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>PhD</strong> - University of Glasgow (2019-2024)<br>
-                    Thesis Title: Backward transfer of Glaswegian English on Indian English and Hindi: a case of simultaneous bilingual and bidialectal contact and interaction in Indian immigrants in Glasgow
-                </li>
-                <li>
-                    <strong>MSc.</strong> - University of Glasgow (2017-2018)<br>
-                    English Language and Linguistics
-                </li>
-            </ul>
-        </section>
+            <div class="flex-item education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>PhD</strong> - University of Glasgow (2019-2024)<br>
+                        Thesis Title: Backward transfer of Glaswegian English on Indian English and Hindi: a case of simultaneous bilingual and bidialectal contact and interaction in Indian immigrants in Glasgow
+                    </li>
+                    <li>
+                        <strong>MSc.</strong> - University of Glasgow (2017-2018)<br>
+                        English Language and Linguistics
+                    </li>
+                </ul>
+            </div>
 
-        <section class="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <strong>Research Assistant</strong> - University of Glasgow (2023-2024)<br>
-                    Description of your role and achievements.
-                </li>
-            </ul>
-        </section>
+            <div class="flex-item experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <strong>Research Assistant</strong> - University of Glasgow (2023-2024)<br>
+                        Description of your role and achievements.
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <section class="publications">
             <h2>Publications</h2>
