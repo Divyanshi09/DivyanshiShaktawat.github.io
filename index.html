@@ -50,10 +50,12 @@
             text-align: center; /* Center the section headings */
         }
         .flex-container {
-            display: grid; /* Changed to grid layout */
+            display: grid; /* Use grid layout */
             grid-template-columns: repeat(3, 1fr); /* Three equal columns */
             gap: 20px; /* Space between columns */
-            margin-top: 40px;
+        }
+        .flex-item {
+            margin: 20px 0; /* Space for each section */
         }
         ul {
             list-style: none;
@@ -89,8 +91,8 @@
             <img src="https://divyanshi09.github.io/DivyanshiShaktawat.github.io/my_image.jpg" alt="Divyanshi Shaktawat">
         </div>
 
-        <div class="flex-container">
-            <div class="areas-of-interest">
+        <section class="flex-container">
+            <div class="flex-item areas-of-interest">
                 <h2>Areas of Interest</h2>
                 <ul>
                     <li>L1 attrition/Backward Transfer</li>
@@ -102,7 +104,7 @@
                 </ul>
             </div>
 
-            <div class="education">
+            <div class="flex-item education">
                 <h2>Education</h2>
                 <ul>
                     <li>
@@ -116,7 +118,7 @@
                 </ul>
             </div>
 
-            <div class="experience">
+            <div class="flex-item experience">
                 <h2>Experience</h2>
                 <ul>
                     <li>
@@ -125,7 +127,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
 
         <section class="publications">
             <h2>Publications</h2>
