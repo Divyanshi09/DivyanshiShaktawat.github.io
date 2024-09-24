@@ -50,20 +50,15 @@
             text-align: center; /* Center the section headings */
         }
         .flex-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start; /* Align items at the start */
+            display: grid; /* Changed to grid layout */
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            gap: 20px; /* Space between columns */
             margin-top: 40px;
-        }
-        .flex-item {
-            flex: 1; /* Allow items to grow equally */
-            margin: 0 15px; /* Space between items */
-            padding: 20px; /* Added padding for better spacing */
-            text-align: center; /* Center text within each item */
         }
         ul {
             list-style: none;
             padding: 0;
+            text-align: left; /* Align text to left for readability */
         }
         ul li {
             padding: 10px; /* Adjusted padding */
@@ -95,7 +90,7 @@
         </div>
 
         <div class="flex-container">
-            <div class="flex-item areas-of-interest">
+            <div class="areas-of-interest">
                 <h2>Areas of Interest</h2>
                 <ul>
                     <li>L1 attrition/Backward Transfer</li>
@@ -107,7 +102,7 @@
                 </ul>
             </div>
 
-            <div class="flex-item education">
+            <div class="education">
                 <h2>Education</h2>
                 <ul>
                     <li>
@@ -121,7 +116,7 @@
                 </ul>
             </div>
 
-            <div class="flex-item experience">
+            <div class="experience">
                 <h2>Experience</h2>
                 <ul>
                     <li>
