@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,18 +47,19 @@
             font-size: 2rem;
             margin-bottom: 15px;
             font-weight: 500; /* Slightly bold for headings */
+            text-align: center; /* Center the section headings */
         }
         .flex-container {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start; /* Align items at the start */
             margin-top: 40px;
         }
         .flex-item {
             flex: 1; /* Allow items to grow equally */
-            margin-right: 20px; /* Space between items */
-        }
-        .flex-item:last-child {
-            margin-right: 0; /* Remove margin from last item */
+            margin: 0 15px; /* Space between items */
+            padding: 20px; /* Added padding for better spacing */
+            text-align: center; /* Center text within each item */
         }
         ul {
             list-style: none;
