@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Divyanshi Shaktawat - Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
@@ -17,57 +18,54 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1 {
-            font-size: 3rem;
-            font-weight: 500;
+        h1, h2, h3 {
+            color: #333;
             text-align: center;
-            margin-top: 30px;
         }
-        .contact-info {
-            font-size: 1.5rem;
+        h1 {
+            margin-top: 50px;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.5;
             text-align: center;
-            margin-bottom: 30px;
-            font-weight: 400; /* Normal weight */
         }
         .photo {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         .photo img {
-            width: 200px; /* Increased size */
-            height: 200px; /* Increased size */
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #333;
+            border: 3px solid #333;
         }
-        .sections-container {
+        .sections {
             display: flex;
             justify-content: space-between;
             margin-top: 40px;
         }
-        section {
-            width: 30%; /* Set a width for each section */
-            padding: 20px; /* Add padding for visual space */
+        .section {
+            width: 30%;
+            margin: 0 10px;
         }
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            font-weight: 500; /* Slightly bold for headings */
-            text-align: center; /* Center the section headings */
+        .areas-of-interest, .education, .experience, .publications {
+            margin-top: 20px;
         }
         ul {
             list-style: none;
             padding: 0;
-            text-align: left; /* Align text to left for readability */
         }
         ul li {
-            padding: 10px; /* Adjusted padding */
             margin: 10px 0;
-            font-weight: 400; /* Normal weight */
-            border-bottom: 1px solid #ddd; /* Light line for separation */
-        }
-        .publications {
-            margin-top: 40px; /* Margin above publications section */
         }
         .footer {
             margin-top: 50px;
@@ -83,17 +81,21 @@
 <body>
 
     <div class="container">
+        <!-- Header Section -->
         <header>
             <h1>Divyanshi Shaktawat</h1>
-            <p class="contact-info">Postdoctoral Research Fellow | UiT The Arctic University of Norway | dshaktawat09@gmail.com</p>
+            <p>Postdoctoral Research Fellow | UiT The Arctic University of Norway | dshaktawat09@gmail.com</p>
         </header>
 
+        <!-- Photo Section -->
         <div class="photo">
-            <img src="https://divyanshi09.github.io/DivyanshiShaktawat.github.io/my_image.jpg" alt="Divyanshi Shaktawat">
+            <img src="https://divyanshi09.github.io/DivyanshiShaktawat.github.io/my_image.jpg" alt="Your Photo">
         </div>
 
-        <div class="sections-container">
-            <section class="areas-of-interest" style="margin-right: 20px;">
+        <!-- Sections -->
+        <div class="sections">
+            <!-- Areas of Interest Section -->
+            <div class="section areas-of-interest">
                 <h2>Areas of Interest</h2>
                 <ul>
                     <li>L1 attrition/Backward Transfer</li>
@@ -103,9 +105,10 @@
                     <li>Psycholinguistics</li>
                     <li>Ethnolinguistic minorities</li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="education" style="margin-left: 20px; margin-right: 20px;">
+            <!-- Education Section -->
+            <div class="section education">
                 <h2>Education</h2>
                 <ul>
                     <li>
@@ -117,9 +120,10 @@
                         English Language and Linguistics
                     </li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="experience" style="margin-left: 20px;">
+            <!-- Experience Section -->
+            <div class="section experience">
                 <h2>Experience</h2>
                 <ul>
                     <li>
@@ -127,9 +131,10 @@
                         Description of your role and achievements.
                     </li>
                 </ul>
-            </section>
+            </div>
         </div>
 
+        <!-- Publications Section -->
         <section class="publications">
             <h2>Publications</h2>
             <ul>
@@ -144,6 +149,7 @@
             </ul>
         </section>
 
+        <!-- Footer Section -->
         <footer class="footer">
             <p><a href="https://github.com/Divyanshi09">View GitHub Profile</a></p>
         </footer>
