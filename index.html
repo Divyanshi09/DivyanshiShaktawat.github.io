@@ -12,34 +12,25 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            padding: 20px;
-        }
-        .sidebar {
-            width: 30%;
-            padding: 20px;
             text-align: center;
         }
-        .sidebar img {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             border: 4px solid #333;
             margin-bottom: 20px;
         }
-        .content {
-            width: 70%;
-            padding: 20px;
-        }
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
-        .contact {
+        .contact-info {
             font-size: 1.2rem;
             margin-bottom: 30px;
             font-weight: 500;
@@ -47,16 +38,18 @@
         h2 {
             font-size: 2rem;
             margin-bottom: 15px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+            color: #333;
         }
         ul {
             list-style: none;
             padding: 0;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
         }
         ul li {
             background: #fff;
-            padding: 10px;
+            padding: 15px;
             margin: 10px 0;
             border-left: 5px solid #333;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -66,48 +59,44 @@
 <body>
 
     <div class="container">
-        <div class="sidebar">
-            <img src="https://divyanshi09.github.io/DivyanshiShaktawat.github.io/my_image.jpg" alt="Divyanshi Shaktawat">
-            <h1>Divyanshi Shaktawat</h1>
-            <p class="contact">Postdoctoral Research Fellow<br>UiT The Arctic University of Norway<br>dshaktawat09@gmail.com</p>
-        </div>
+        <img src="https://divyanshi09.github.io/DivyanshiShaktawat.github.io/my_image.jpg" alt="Divyanshi Shaktawat">
+        <h1>Divyanshi Shaktawat</h1>
+        <p class="contact-info">Postdoctoral Research Fellow<br>UiT The Arctic University of Norway<br>dshaktawat09@gmail.com</p>
 
-        <div class="content">
-            <section class="areas-of-interest">
-                <h2>Areas of Interest</h2>
-                <ul>
-                    <li>L1 attrition/Backward Transfer</li>
-                    <li>Bilingualism/Multilingualism</li>
-                    <li>Bidialectalism</li>
-                    <li>Sociophonetics</li>
-                    <li>Psycholinguistics</li>
-                    <li>Ethnolinguistic minorities</li>
-                </ul>
-            </section>
+        <section class="areas-of-interest">
+            <h2>Areas of Interest</h2>
+            <ul>
+                <li>L1 attrition/Backward Transfer</li>
+                <li>Bilingualism/Multilingualism</li>
+                <li>Bidialectalism</li>
+                <li>Sociophonetics</li>
+                <li>Psycholinguistics</li>
+                <li>Ethnolinguistic minorities</li>
+            </ul>
+        </section>
 
-            <section class="education">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>PhD</strong> - University of Glasgow (2019-2024)</li>
-                    <li><strong>MSc</strong> - University of Glasgow (2017-2018)</li>
-                </ul>
-            </section>
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>PhD</strong> - University of Glasgow (2019-2024)</li>
+                <li><strong>MSc.</strong> - University of Glasgow (2017-2018)</li>
+            </ul>
+        </section>
 
-            <section class="experience">
-                <h2>Experience</h2>
-                <ul>
-                    <li><strong>Research Assistant</strong> - University of Glasgow (2023-2024)</li>
-                </ul>
-            </section>
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Research Assistant</strong> - University of Glasgow (2023-2024)</li>
+            </ul>
+        </section>
 
-            <section class="publications">
-                <h2>Publications</h2>
-                <ul>
-                    <li><strong>Backward Transfer of Glaswegian English</strong> - Enlighten Thesis (2024)</li>
-                    <li><strong>The Effect of Indian and Glaswegian Contact</strong> - Languages (2024)</li>
-                </ul>
-            </section>
-        </div>
+        <section class="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><strong>Backward Transfer of Glaswegian English</strong> - Enlighten Thesis (2024)</li>
+                <li><strong>The Effect of Indian and Glaswegian Contact</strong> - Languages (2024)</li>
+            </ul>
+        </section>
     </div>
 
 </body>
