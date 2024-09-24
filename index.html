@@ -41,7 +41,7 @@
             border: 4px solid #333;
         }
         section {
-            margin-top: 40px;
+            margin-top: 60px; /* Increased spacing between sections */
         }
         h2 {
             font-size: 2rem;
@@ -49,18 +49,12 @@
             font-weight: 500; /* Slightly bold for headings */
             text-align: center; /* Center the section headings */
         }
-        .flex-container {
-            display: grid; /* Use grid layout */
-            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-            gap: 20px; /* Space between columns */
-        }
-        .flex-item {
-            margin: 20px 0; /* Space for each section */
-        }
         ul {
             list-style: none;
             padding: 0;
             text-align: left; /* Align text to left for readability */
+            margin: 0 auto; /* Center the list */
+            max-width: 700px; /* Limit the width of the list */
         }
         ul li {
             padding: 10px; /* Adjusted padding */
@@ -91,42 +85,40 @@
             <img src="https://divyanshi09.github.io/DivyanshiShaktawat.github.io/my_image.jpg" alt="Divyanshi Shaktawat">
         </div>
 
-        <section class="flex-container">
-            <div class="flex-item areas-of-interest">
-                <h2>Areas of Interest</h2>
-                <ul>
-                    <li>L1 attrition/Backward Transfer</li>
-                    <li>Bilingualism/Multilingualism</li>
-                    <li>Bidialectalism</li>
-                    <li>Sociophonetics</li>
-                    <li>Psycholinguistics</li>
-                    <li>Ethnolinguistic minorities</li>
-                </ul>
-            </div>
+        <section class="areas-of-interest">
+            <h2>Areas of Interest</h2>
+            <ul>
+                <li>L1 attrition/Backward Transfer</li>
+                <li>Bilingualism/Multilingualism</li>
+                <li>Bidialectalism</li>
+                <li>Sociophonetics</li>
+                <li>Psycholinguistics</li>
+                <li>Ethnolinguistic minorities</li>
+            </ul>
+        </section>
 
-            <div class="flex-item education">
-                <h2>Education</h2>
-                <ul>
-                    <li>
-                        <strong>PhD</strong> - University of Glasgow (2019-2024)<br>
-                        Thesis Title: Backward transfer of Glaswegian English on Indian English and Hindi: a case of simultaneous bilingual and bidialectal contact and interaction in Indian immigrants in Glasgow
-                    </li>
-                    <li>
-                        <strong>MSc.</strong> - University of Glasgow (2017-2018)<br>
-                        English Language and Linguistics
-                    </li>
-                </ul>
-            </div>
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>PhD</strong> - University of Glasgow (2019-2024)<br>
+                    Thesis Title: Backward transfer of Glaswegian English on Indian English and Hindi: a case of simultaneous bilingual and bidialectal contact and interaction in Indian immigrants in Glasgow
+                </li>
+                <li>
+                    <strong>MSc.</strong> - University of Glasgow (2017-2018)<br>
+                    English Language and Linguistics
+                </li>
+            </ul>
+        </section>
 
-            <div class="flex-item experience">
-                <h2>Experience</h2>
-                <ul>
-                    <li>
-                        <strong>Research Assistant</strong> - University of Glasgow (2023-2024)<br>
-                        Description of your role and achievements.
-                    </li>
-                </ul>
-            </div>
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Research Assistant</strong> - University of Glasgow (2023-2024)<br>
+                    Description of your role and achievements.
+                </li>
+            </ul>
         </section>
 
         <section class="publications">
