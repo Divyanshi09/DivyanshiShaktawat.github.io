@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,38 +11,37 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
-            color: #333;
         }
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
-            display: flex;
-            padding: 20px;
-        }
-        .sidebar {
-            width: 30%;
-            padding: 20px;
-            text-align: center;
-        }
-        .sidebar img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 4px solid #333;
-            margin-bottom: 20px;
-        }
-        .content {
-            width: 70%;
             padding: 20px;
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 30px;
         }
-        .contact {
-            font-size: 1.2rem;
+        .contact-info {
+            font-size: 1.5rem;
+            text-align: center;
             margin-bottom: 30px;
             font-weight: 500;
+        }
+        .photo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .photo img {
+            width: 200px; /* Increased size */
+            height: 200px; /* Increased size */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #333;
+        }
+        section {
+            margin-top: 40px;
         }
         h2 {
             font-size: 2rem;
@@ -57,71 +55,88 @@
         }
         ul li {
             background: #fff;
-            padding: 10px;
+            padding: 15px; /* Increased padding */
             margin: 10px 0;
             border-left: 5px solid #333;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="sidebar">
-            <img src="https://divyanshi09.github.io/DivyanshiShaktawat.github.io/my_image.jpg" alt="Divyanshi Shaktawat">
+        <header>
             <h1>Divyanshi Shaktawat</h1>
-            <p class="contact">Postdoctoral Research Fellow<br>UiT The Arctic University of Norway<br>dshaktawat09@gmail.com</p>
+            <p class="contact-info">Postdoctoral Research Fellow | UiT The Arctic University of Norway | dshaktawat09@gmail.com</p>
+        </header>
+
+        <div class="photo">
+            <img src="https://divyanshi09.github.io/DivyanshiShaktawat.github.io/my_image.jpg" alt="Divyanshi Shaktawat">
         </div>
 
-        <div class="content">
-            <section class="areas-of-interest">
-                <h2>Areas of Interest</h2>
-                <ul>
-                    <li>L1 attrition/Backward Transfer</li>
-                    <li>Bilingualism/Multilingualism</li>
-                    <li>Bidialectalism</li>
-                    <li>Sociophonetics</li>
-                    <li>Psycholinguistics</li>
-                    <li>Ethnolinguistic minorities</li>
-                </ul>
-            </section>
+        <section class="areas-of-interest">
+            <h2>Areas of Interest</h2>
+            <ul>
+                <li>L1 attrition/Backward Transfer</li>
+                <li>Bilingualism/Multilingualism</li>
+                <li>Bidialectalism</li>
+                <li>Sociophonetics</li>
+                <li>Psycholinguistics</li>
+                <li>Ethnolinguistic minorities</li>
+            </ul>
+        </section>
 
-            <section class="education">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>PhD</strong> - University of Glasgow (2019-2024)<br>
-                        English Language and Linguistics<br>
-                        Thesis Title: Backward transfer of Glaswegian English on Indian English and Hindi: a case of simultaneous bilingual and bidialectal contact and interaction in Indian immigrants in Glasgow
-                    </li>
-                    <li><strong>MSc.</strong> - University of Glasgow (2017-2018)<br>
-                        English Language and Linguistics
-                    </li>
-                </ul>
-            </section>
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>PhD</strong> - University of Glasgow (2019-2024)<br>
+                    English Language and Linguistics<br>
+                    Thesis Title: Backward transfer of Glaswegian English on Indian English and Hindi: a case of simultaneous bilingual and bidialectal contact and interaction in Indian immigrants in Glasgow
+                </li>
+                <li>
+                    <strong>MSc.</strong> - University of Glasgow (2017-2018)<br>
+                    English Language and Linguistics
+                </li>
+            </ul>
+        </section>
 
-            <section class="experience">
-                <h2>Experience</h2>
-                <ul>
-                    <li><strong>Research Assistant</strong> - University of Glasgow (2023-2024)<br>
-                        Description of your role and achievements.
-                    </li>
-                </ul>
-            </section>
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Research Assistant</strong> - University of Glasgow (2023-2024)<br>
+                    Description of your role and achievements.
+                </li>
+            </ul>
+        </section>
 
-            <section class="publications">
-                <h2>Publications</h2>
-                <ul>
-                    <li>
-                        <strong>Backward transfer of Glaswegian English on Indian English and Hindi: a case of simultaneous bilingual and bidialectal contact and interaction in Indian immigrants in Glasgow.</strong> - Enlighten Thesis (2024)<br>
-                        [<a href="https://theses.gla.ac.uk/84017/">View Publication</a>]
-                    </li>
-                    <li>
-                        <strong>The Effect of Indian Contact and Glaswegian Contact on the Phonetic Backward Transfer of Glaswegian English (L2) on Hindi and Indian English (L1)</strong> - Languages (2024)<br>
-                        [<a href="https://doi.org/10.3390/languages9040118">View Publication</a>]
-                    </li>
-                </ul>
-            </section>
-        </div>
+        <section class="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>
+                    <strong>Backward transfer of Glaswegian English on Indian English and Hindi: a case of simultaneous bilingual and bidialectal contact and interaction in Indian immigrants in Glasgow.</strong> - Enlighten Thesis (2024)<br>
+                    [<a href="https://theses.gla.ac.uk/84017/">View Publication</a>]
+                </li>
+                <li>
+                    <strong>The Effect of Indian Contact and Glaswegian Contact on the Phonetic Backward Transfer of Glaswegian English (L2) on Hindi and Indian English (L1)</strong> - Languages (2024)<br>
+                    [<a href="https://doi.org/10.3390/languages9040118">View Publication</a>]
+                </li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p><a href="https://github.com/Divyanshi09">View GitHub Profile</a></p>
+        </footer>
     </div>
 
 </body>
